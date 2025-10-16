@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Географічний аналіз Києва</title>
+    <img src="07ukraine-briefing-motherland-monument-photos-05-wmzk-videoSixteenByNineJumbo1600-v2.jpg">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: #000000;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #1a1a1a;
+            color: #ffffff;
+            text-align: center;
+            padding: 80px 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+        }
+        header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5em;
+            font-weight: 700;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+        }
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+            margin: 15px 0 0;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+        }
+        section {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: #2a2a2a;
+            border-radius: 20px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.6);
+            border: 2px solid #666666;
+            animation: scaleIn 1s ease-out;
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.9); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .intro-text {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #cccccc;
+        }
+        .songs-title {
+            font-family: 'Playfair Display', serif;
+            color: #ffffff;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        }
+        .slider-container {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+        .slider {
+            display: flex;
+            transition: transform 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            width: calc(100% * 5); 
+        }
+        .slide {
+            width: 20%; 
+            padding: 25px;
+            border-left: 5px solid #666666;
+            background-color: #3a3a3a;
+            border-radius: 12px;
+            box-sizing: border-box;
+            transition: all 0.4s ease;
+            flex-shrink: 0;
+        }
+        .slide:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+            background-color: #4a4a4a;
+            border-left-color: #999999;
+        }
+        .slide h3 {
+            color: #ffffff;
+            font-family: 'Playfair Display', serif;
+            margin-top: 0;
+            font-size: 1.5em;
+        }
+        .slide p {
+            font-style: italic;
+            color: #cccccc;
+        }
+        .dots {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .active, .dot:hover { background-color: #717171; }
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Географічний аналіз Києва</h1>
+        <p>ДЗ Мирослава Петровського та Андрія Богуславця</p>
+        <p>Подорож у світ ландшафтів, клімату, річок та екосистем столиці</p>
+    </header>
+   
+    <section id="intro">
+        <p class="intro-text">Київ — столиця України, розташована на берегах Дніпра в його середній течії на межі Полісся та лісостепу. Місто поєднує унікальний рельєф пагорбів, помірно-континентальний клімат та багатий світ водних об'єктів. Площа — 839 км², середня висота — 133 м над рівнем моря.</p>
+        <img src="1688363090_kartin-papik-pro-p-kartinki-kiev-leto-51.jpg" alt="Панорама Києва з Дніпром">
+    </section>
+   
+    <section id="songs">
+        <h2 class="songs-title">Ключові географічні особливості Києва</h2>
+        <div class="slider-container" onclick="handleClick(event)">
+            <div class="slider" id="slider">
+                <div class="slide">
+                    <h3>Рельєф та береги</h3>
+                    <p>Київ розташований на Київських пагорбах — відрогах Придніпровської височини. Правий берег пагорбистий з ярами та балками (висота до 196 м, старіша частина на численних лісистих пагорбах), лівий — рівнинний у межах Придніпровської низовини. Рельєф сформувався на межі Поліської та Придніпровської низовин; урбанізація розширила лівобережжя.</p>
+                </div>
+                <div class="slide">
+                    <h3>Клімат</h3>
+                    <p>Помірно-континентальний м'який та вологий клімат. Середньорічна температура +9°C, але 2024 — найтепліший рік (+11.4°C, на 2.4°C вище норми). Опади близько 650 мм; вересень 2025 — 17.5°C проти норми 14.9°C. Зима 2024-2025 —  найтепліша з 1881. Війна сприяє ризику токсичного забруднення;</p>
+                </div>
+                <div class="slide">
+                    <h3>Водні ресурси</h3>
+                    <p>Дніпро — головна артерія (у межах міста 60 км), з притоками Десна, Сирець, Либідь. Понад 400 водойм, включаючи Київське водосховище; рельєф сприяє швидкому стоку. У 2025: забруднення фосфатами та амонієм від промисловості, олійні плями на берегах, зелений колір води в резервуарах. Війна: неочищені стоки, план управління басейном 2025-2030 фокусується на очищенні; 161 забруднювач, включаючи атразин, кадмій.</p>
+                </div>
+                <div class="slide">
+                    <h3>Флора та фауна</h3>
+                    <p>Київ — зелене місто з 40% зелених зон: Полісся ліси, степова рослинність. Червонокнижний список регіону: рідкісні рослини та тварини (понад 1000 видів рослин, 200 птахів). 2025: спостереження за видами в Поліссі, рослиність — серед найбагатших на біорізноманіття. Символ — кінський каштан.</p>
+                </div>
+                <div class="slide">
+                    <h3>Вплив війни на екологію</h3>
+                    <p>Повномасштабне вторгнення: €85 млрд збитків, 30% території забруднено мінами.       Знищення дамб (Каховка) — втрата води для мільйонів, забруднення річок неочищеними стоками. руйнування 210 тис. будівель, токсичні ризики. У Київській обл.: зміна відносин людей з природою, екологічна катастрофа для флори/фауни.</p>
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span class="dot active" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+    </section>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function handleClick(event) {
+            const rect = event.currentTarget.getBoundingClientRect();
+            const x = event.clientX - rect.left;
+            if (x < rect.width / 2) {
+                changeSlide(-1);
+            } else {
+                changeSlide(1);
+            }
+        }
+
+        function changeSlide(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let dots = document.getElementsByClassName("dot");
+            let slider = document.getElementById("slider");
+            if (n > 5) { slideIndex = 1 } 
+            if (n < 1) { slideIndex = 5 }
+            slider.style.transform = `translateX(-${(slideIndex - 1) * 20}%)`; 
+
+            for (let i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+</html>
